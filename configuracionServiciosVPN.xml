@@ -1,0 +1,1034 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dinvpn>
+	<anotacion>
+		<documentacion>
+			Permite la consulta de la configuración de un miembro de una
+			VPN
+		</documentacion>
+		<version>1.0</version>
+	</anotacion>
+	<servicios>
+		<servicio id="invpn.crear.vpn">
+			<anotacion>
+				<documentacion>
+					Permite la creación de una VPN la cual esta asociada
+					a una CuentaMadre de KenanFX Para 2da fase la VPN
+					corresponde a un IDVPN distinto a la CtaMadre
+				</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="cai" servicio="1.0">
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="CompanyName"
+							actual="CompanyName" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.1">
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="4.7">
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.3">	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.4" >
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.5" >
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="4.8" >
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.6" >
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.7">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.8" >
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus)
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+-->			
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="1.9" >
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus)
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>	
+-->			
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="4.5">
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<!-- Comandos 1, agregado el 17-Nov-08 -->
+				<!-- Estos lo tenia el proceso de euclides
+				<comando delegador="cai" servicio="6.6">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="BASICO" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.8">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="MEDIO" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="7.8">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				-->
+				<!-- Fin de Comando 1, agregado el 17-Nov-08 -->
+				<comando delegador="cai" servicio="2.0">
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId"   actual="GroupId" />
+						<parametro formal="GroupName" actual="GroupName" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.1" >
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.2">			
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.3">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>				
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.4">
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus no cobrado)
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+-->			
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.5">
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus no cobrado)
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+-->			
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="4.6" >
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<!--  Comando 2, agregado el 17-Nov-08 -->
+				<!-- Estos lo tenia el proceso de euclides
+				<comando delegador="cai" servicio="6.7">
+				<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="BASICO" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId"   actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.9">
+				    <condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId"   actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>	
+				 -->
+				<!-- Fin de Comando 2, agregado el 17-Nov-08 -->
+			</comandos>
+		</servicio>
+
+
+		<servicio id="invpn.consultar.vpn">
+			<anotacion>
+				<documentacion>Consultar VPN</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="cai" servicio="2.6" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.7" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.8" ><!-- Plan="3" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="2.9" ><!-- Plan="3" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.0" ><!-- Plan="2" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.1" ><!-- Plan="3" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.2" ><!-- Plan="3" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.3" ><!-- Plan="2" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.4" ><!-- Plan="2" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.5" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.6" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.7" ><!-- Plan="3" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:igualdad">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="AVANZADO" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.8" ><!-- Plan="2" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="3.9" ><!-- Plan="2" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="4.0" ><!-- Plan="2" > -->
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor" actual="Plan" />
+								<parametro formal="rvalor" constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>	
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+			</comandos>
+		</servicio>
+
+
+
+		<servicio id="invpn.eliminar.vpn">
+			<anotacion>
+				<documentacion>Eliminar VPN</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="cai" servicio="4.2" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="4.1" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+			</comandos>
+		</servicio>
+
+
+
+
+
+		<servicio id="invpn.crear.suscriptor">
+			<anotacion>
+				<documentacion>Crear SUSCRIPTOR</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="rc" servicio="invpn.crear.vpn" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+						<parametro formal="CompanyName"	actual="CompanyName" />
+						<parametro formal="GroupName"	actual="GroupName" />
+						<parametro formal="Plan"	actual="Plan" />
+					</parametros>
+					<retorno ignorar="y" codes="3014" />
+				</comando>
+				<comando delegador="cai" servicio="5.0" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.1" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.2" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.3">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId"
+							actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.4">
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus no cobrado)
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+-->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.5">
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus no cobrado)
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+-->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.6" >
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+						<parametro formal="NumberName" actual="NumberName" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="7.0" >
+					<parametros>
+						<parametro formal="TraceId" actual="TraceId" />
+						<parametro formal="Imsi" actual="Imsi" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="7.1" >
+					<parametros>
+						<parametro formal="TraceId" actual="TraceId" />
+						<parametro formal="Imsi" actual="Imsi" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+			</comandos>
+		</servicio>
+
+
+		<servicio id="invpn.consultar.suscriptor">
+			<anotacion>
+				<documentacion>Consultar SUSCRIPTOR</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="cai" servicio="5.7" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.8" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.9" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.0">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId"
+							actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.1">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.2">
+					<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId"
+							actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.3" >
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+						<parametro formal="NumberName" actual="NumberName" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+			</comandos>
+		</servicio>
+	
+		<servicio id="invpn.eliminar.suscriptor">
+			<anotacion>
+				<documentacion>Eliminar SUSCRIPTOR</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="cai" servicio="6.5" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+						<parametro formal="NumberName" actual="NumberName" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.4" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="7.5" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="TraceId" actual="TraceId" />
+						<parametro formal="Imsi" actual="Imsi" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="7.6" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="TraceId" actual="TraceId" />
+						<parametro formal="Imsi" actual="Imsi" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+			</comandos>
+		</servicio>
+		
+		
+		
+		<servicio id="invpn.crear.parcial.suscriptor">
+			<anotacion>
+				<documentacion>Crear parcialmente un SUSCRIPTOR</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="rc" servicio="invpn.crear.vpn" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+						<parametro formal="CompanyName"	actual="CompanyName" />
+						<parametro formal="GroupName"	actual="GroupName" />
+						<parametro formal="Plan"	actual="Plan" />
+					</parametros>
+					<retorno ignorar="y" codes="3014" />
+				</comando>
+				<comando delegador="cai" servicio="5.0" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.1" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.2" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.3">
+				 	<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+					<parametros>
+						<parametro formal="CompanyId"
+							actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.4">
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus no cobrado)
+				 	<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+-->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.5">
+<!-- Comando habilitados (eliminamos restriccion), para que aplique para BASICA (plus no cobrado)
+				 	<condiciones>
+						<comando delegador="local"
+							servicio="cond:match">
+							<parametros>
+								<parametro formal="lvalor"
+									actual="Plan" />
+								<parametro formal="rvalor"
+									constante="^(MEDIO|AVANZADO)$" />
+							</parametros>
+						</comando>
+					</condiciones>
+-->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="5.6" >
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+						<parametro formal="NumberName" actual="NumberName" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+			</comandos>
+		</servicio>
+
+	
+		<servicio id="invpn.eliminar.parcial.suscriptor">
+			<anotacion>
+				<documentacion>Eliminar parcialmente un SUSCRIPTOR</documentacion>
+			</anotacion>
+			<comandos>
+				<comando delegador="cai" servicio="6.5" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+						<parametro formal="NumberName" actual="NumberName" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+				<comando delegador="cai" servicio="6.4" ><!-- Plan="1" > -->
+					<parametros>
+						<parametro formal="CompanyId" actual="CompanyId" />
+						<parametro formal="GroupId" actual="GroupId" />
+						<parametro formal="UserId" actual="UserId" />
+					</parametros>
+					<retorno ignorar="n" />
+				</comando>
+			</comandos>
+		</servicio>
+
+
+	</servicios>
+
+	<!-- Tabla de equivalencias-->
+<!-- 
+	<tablas>
+
+
+		<tabla id="tabla:PlanesKenanFX">
+			<anotacion>
+				<documentacion>
+					Tabla de equivalencias entre Planes Nexos y Paquetes
+					de Servicios VPN
+				</documentacion>
+			</anotacion>
+			<valores>
+				<valor>
+					<clave>NEXO1</clave>
+					<contenido>BASICO</contenido>
+				</valor>
+			</valores>
+		</tabla>
+
+		<tabla id="tabla:PaquetesVpn">
+			<anotacion>
+				<documentacion>
+					Tabla de paquetes de VPNs a la venta
+				</documentacion>
+			</anotacion>
+			<valores>
+				<valor>
+					<clave>BASICO</clave>
+				</valor>
+				<valor>
+					<clave>MEDIO</clave>
+				</valor>
+				<valor>
+					<valor>AVANZADO</valor>
+				</valor>
+			</valores>
+		</tabla>
+	</tablas>
+ -->
+
+	<delegadores>
+		<delegador id="cai" constructor="class" nombre="ve.com.digitel.invpn.dmo.DNMODelegator" />
+
+		<delegador id="local" constructor="class" nombre="ve.com.digitel.invpn.rc.command.LocalClassDelegator">
+			<servicio id="cond:igualdad" nombre="ve.com.digitel.invpn.rc.filtros.Igualdad" />
+			<servicio id="cond:match" nombre="ve.com.digitel.invpn.rc.filtros.Match" />
+			<!-- 
+			<servicio id="consultaUsuario" nombre="ve.com.digitel.invpn.model.GetSubscriberVpnConcreteCommand" />
+			<servicio id="crearVPN" nombre="ve.com.digitel.invpn.model.GetSubscriberVpnConcreteCommand" />
+			 -->		
+		</delegador>
+		<delegador id="rc" constructor="class" nombre="ve.com.digitel.invpn.rc.command.LocalRequestDelegator">
+		</delegador>
+	</delegadores>
+</dinvpn>

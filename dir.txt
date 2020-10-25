@@ -1,0 +1,177 @@
+.:
+total 31320
+-rw-r--r--   1 weblogic other        120 Oct  2  2009 application.properties
+-rw-r--r--   1 weblogic other      43859 Apr 28  2010 CommandsConfig_.xml
+-rw-r--r--   1 weblogic other      43859 Apr 27  2010 CommandsConfig.xml
+-rw-r--r--   1 weblogic other        394 Apr 13  2010 ConectorConfig.xml
+-rwxrwxrwx   1 weblogic other      34352 May 19  2010 configuracionServiciosVPN.xml
+-rw-r--r--   1 weblogic other          0 Jun 28 11:47 dir.txt
+-rw-r--r--   1 weblogic other    7928775 May 18  2010 invpn.ear
+-rw-r--r--   1 weblogic other    7928886 Apr 27  2010 invpn.ear_resp
+-rw-r--r--   1 weblogic other       1331 May 18  2010 invpnConfig.properties
+-rw-r--r--   1 weblogic other       7232 May 19  2010 log4j.properties
+drwxr-xr-x   2 weblogic other        512 Jul  8  2011 logs
+-rw-r--r--   1 weblogic other      20968 Oct  5  2009 messagelist.properties
+drwxr-xr-x   6 weblogic other        512 Oct 16  2009 SincronizadorKenanCvpnUltimaVF
+-rw-r--r--   1 weblogic other         26 Oct  2  2009 sms.cfg
+
+./logs:
+total 416
+-rw-r--r--   1 weblogic other     197494 May 27  2010 app_invpn.log
+-rw-r--r--   1 weblogic other          0 Dec 16  2009 hlrcontroller.log
+
+./SincronizadorKenanCvpnUltimaVF:
+total 2264
+-rw-r--r--   1 weblogic other    1124276 Oct 16  2009 classes12.jar
+drwxr-xr-x   3 weblogic other        512 Oct 16  2009 com
+drwxr-xr-x  10 weblogic other        512 Oct 16  2009 Conciliador_Run
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 Documentacion
+-rw-r--r--   1 weblogic other        353 Oct 16  2009 probar_sin_borrar.sh
+-rw-r--r--   1 weblogic other        392 Oct 16  2009 probar.sh
+-rw-r--r--   1 weblogic other        374 Oct 16  2009 runcommit_sin_borrar.sh
+-rw-r--r--   1 weblogic other        376 Oct 16  2009 runcommit.sh
+-rw-r--r--   1 weblogic other       5274 Oct 16  2009 sincronizador.properties
+-rw-r--r--   1 weblogic other       5188 Oct 16  2009 sincronizador.properties_marta_legal
+drwxr-xr-x   3 weblogic other        512 Oct 16  2009 WEB-INF
+
+./SincronizadorKenanCvpnUltimaVF/com:
+total 2
+drwxr-xr-x   4 weblogic other        512 Oct 16  2009 megasoft
+
+./SincronizadorKenanCvpnUltimaVF/com/megasoft:
+total 4
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 colocadorcuentas
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 sincronizador
+
+./SincronizadorKenanCvpnUltimaVF/com/megasoft/colocadorcuentas:
+total 66
+-rw-r--r--   1 weblogic other      10067 Oct 16  2009 ActualizadorDeCuentas.class
+-rw-r--r--   1 weblogic other      17424 Oct 16  2009 ActualizadorDeCuentas.java
+-rw-r--r--   1 weblogic other       1237 Oct 16  2009 GsmSinCuentaEnCvpn.class
+-rw-r--r--   1 weblogic other       2342 Oct 16  2009 GsmSinCuentaEnCvpn.java
+
+./SincronizadorKenanCvpnUltimaVF/com/megasoft/sincronizador:
+total 238
+-rw-r--r--   1 weblogic other      14152 Oct 16  2009 CuentaCvpn.class
+-rw-r--r--   1 weblogic other      32328 Oct 16  2009 CuentaCvpn.java
+-rw-r--r--   1 weblogic other       2395 Oct 16  2009 CuentaKenan.class
+-rw-r--r--   1 weblogic other       4217 Oct 16  2009 CuentaKenan.java
+-rw-r--r--   1 weblogic other       1709 Oct 16  2009 GsmMiembroCvpn.class
+-rw-r--r--   1 weblogic other      11663 Oct 16  2009 GsmMiembroCvpn.java
+-rw-r--r--   1 weblogic other      15639 Oct 16  2009 SincronizadorKenanCvpn.class
+-rw-r--r--   1 weblogic other      35334 Oct 16  2009 SincronizadorKenanCvpn.java
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run:
+total 486
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 bd
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 bin
+drwxr-xr-x   3 weblogic other        512 Oct 16  2009 classes
+-rw-r--r--   1 weblogic other     218620 Oct 16  2009 core
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 lib
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 log
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 logs
+-rw-r--r--   1 weblogic other       9736 Oct 16  2009 provisioning.jar
+-rw-r--r--   1 weblogic other        296 Oct 16  2009 README
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 resource
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 tmp
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/bd:
+total 4
+-rw-r--r--   1 weblogic other       1114 Oct 16  2009 selectCuentasVpn.sql
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/bin:
+total 34
+-rw-r--r--   1 weblogic other        346 Oct 16  2009 probar_sin_borrar.sh
+-rw-r--r--   1 weblogic other        353 Oct 16  2009 probar_sin_borrar.sh~1~
+-rw-r--r--   1 weblogic other        394 Oct 16  2009 probar.sh
+-rw-r--r--   1 weblogic other        402 Oct 16  2009 probar.sh~1~
+-rw-r--r--   1 weblogic other        392 Oct 16  2009 probar.sh~2~
+-rw-r--r--   1 weblogic other       3128 Oct 16  2009 runall.sh
+-rw-r--r--   1 weblogic other       3073 Oct 16  2009 runall.sh.win
+-rw-r--r--   1 weblogic other        374 Oct 16  2009 runcommit_sin_borrar.sh
+-rw-r--r--   1 weblogic other        379 Oct 16  2009 runcommit.sh
+-rw-r--r--   1 weblogic other        369 Oct 16  2009 runcommit.sh~1~
+-rw-r--r--   1 weblogic other        376 Oct 16  2009 runcommit.sh~2~
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/classes:
+total 2
+drwxr-xr-x   3 weblogic other        512 Oct 16  2009 com
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/classes/com:
+total 2
+drwxr-xr-x   4 weblogic other        512 Oct 16  2009 megasoft
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/classes/com/megasoft:
+total 4
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 colocadorcuentas
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 sincronizador
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/classes/com/megasoft/colocadorcuentas:
+total 24
+-rw-r--r--   1 weblogic other       9843 Oct 16  2009 ActualizadorDeCuentas.class
+-rw-r--r--   1 weblogic other       1233 Oct 16  2009 GsmSinCuentaEnCvpn.class
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/classes/com/megasoft/sincronizador:
+total 70
+-rw-r--r--   1 weblogic other      14004 Oct 16  2009 CuentaCvpn.class
+-rw-r--r--   1 weblogic other       2354 Oct 16  2009 CuentaKenan.class
+-rw-r--r--   1 weblogic other       1633 Oct 16  2009 GsmMiembroCvpn.class
+-rw-r--r--   1 weblogic other      15525 Oct 16  2009 SincronizadorKenanCvpn.class
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/lib:
+total 13184
+-rw-r--r--   1 weblogic other      54368 Oct 16  2009 activation.jar
+-rw-r--r--   1 weblogic other    1599570 Oct 16  2009 axis.jar
+-rw-r--r--   1 weblogic other      17932 Oct 16  2009 bssintutils.jar
+-rw-r--r--   1 weblogic other    1124276 Oct 16  2009 classes12.jar
+-rw-r--r--   1 weblogic other      71442 Oct 16  2009 commons-discovery-0.2.jar
+-rw-r--r--   1 weblogic other     285104 Oct 16  2009 commons-jxpath-1.2.jar
+-rw-r--r--   1 weblogic other      38015 Oct 16  2009 commons-logging-1.0.4.jar
+-rw-r--r--   1 weblogic other       9450 Oct 16  2009 invpnweb-client.jar
+-rw-r--r--   1 weblogic other      31191 Oct 16  2009 jaxrpc.jar
+-rw-r--r--   1 weblogic other     153154 Oct 16  2009 jdom.jar
+-rw-r--r--   1 weblogic other     367444 Oct 16  2009 log4j-1.2.14.jar
+-rw-r--r--   1 weblogic other     347137 Oct 16  2009 mail.jar
+-rw-r--r--   1 weblogic other      18979 Oct 16  2009 saaj.jar
+-rw-r--r--   1 weblogic other     126771 Oct 16  2009 wsdl4j-1.5.1.jar
+-rw-r--r--   1 weblogic other    1290899 Oct 16  2009 xalan.jar
+-rw-r--r--   1 weblogic other     959368 Oct 16  2009 xerces.jar
+-rw-r--r--   1 weblogic other     124724 Oct 16  2009 xml-apis.jar
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/log:
+total 312
+-rw-r--r--   1 weblogic other     134404 Oct 16  2009 resultado_sinc.txt
+-rw-r--r--   1 weblogic other      11995 Oct 16  2009 runall_200803.log
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/logs:
+total 832
+-rw-r--r--   1 weblogic other     213671 Oct 16  2009 int_prog_perform.log
+-rw-r--r--   1 weblogic other     182815 Oct 16  2009 int_prog.log
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/resource:
+total 72
+-rw-r--r--   1 weblogic other       9127 Oct 16  2009 AreClientConfig.xml
+-rw-r--r--   1 weblogic other        723 Oct 16  2009 ccinvpn.properties
+-rw-r--r--   1 weblogic other       2844 Oct 16  2009 log4j.xml
+-rw-r--r--   1 weblogic other       2965 Oct 16  2009 log4j.xml.win
+-rw-r--r--   1 weblogic other       5372 Oct 16  2009 sincronizador.properties
+-rw-r--r--   1 weblogic other       5188 Oct 16  2009 sincronizador.properties_marta_legal
+-rw-r--r--   1 weblogic other       5457 Oct 16  2009 sincronizadorWI.properties
+-rw-r--r--   1 weblogic other         32 Oct 16  2009 sms.cfg
+-rw-r--r--   1 weblogic other         12 Oct 16  2009 sms.cfg~1~
+
+./SincronizadorKenanCvpnUltimaVF/Conciliador_Run/tmp:
+total 0
+
+./SincronizadorKenanCvpnUltimaVF/Documentacion:
+total 256
+-rw-r--r--   1 weblogic other     117248 Oct 16  2009 Manual de Operaciones Del Sincronizador.doc
+
+./SincronizadorKenanCvpnUltimaVF/WEB-INF:
+total 30
+-rw-r--r--   1 weblogic other       5457 Oct 16  2009 sincronizador.properties
+-rw-r--r--   1 weblogic other       8140 Oct 16  2009 sincronizador.properties_ConIMSI.txt
+drwxr-xr-x   2 weblogic other        512 Oct 16  2009 tmp
+
+./SincronizadorKenanCvpnUltimaVF/WEB-INF/tmp:
+total 0

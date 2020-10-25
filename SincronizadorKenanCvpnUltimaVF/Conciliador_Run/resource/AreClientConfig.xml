@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<areclient-config>
+	<command id="invpn.crear.vpn">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>${TraceId}</fc:TraceId>
+                        <fc:target>invpn.crear.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>${Plan}</Plan>
+                        <TraceId>${TraceId}</TraceId>
+                        <GroupId>${GroupId}</GroupId>
+                        <GroupName>${GroupName}</GroupName>                        
+                        <CompanyId>${CompanyId}</CompanyId>
+                        <CompanyName>${CompanyName}</CompanyName>
+            </fc:body>
+</fc:request>
+]]>
+		</body>
+	</command>
+	
+	<command id="invpn.consultar.vpn">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+             <fc:header>
+                        <fc:TraceId>${TraceId}</fc:TraceId>
+                        <fc:target>invpn.consultar.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>${Plan}</Plan>
+                        <TraceId>${TraceId}</TraceId>
+                        <GroupId>${GroupId}</GroupId>
+                        <CompanyId>${CompanyId}</CompanyId>
+            </fc:body>
+</fc:request>
+]]>
+		</body>
+	</command>	
+	
+	
+	<command id="invpn.eliminar.vpn">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <TraceId>${TraceId}</TraceId>
+                        <fc:target>invpn.eliminar.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>${Plan}</Plan>
+                        <TraceId>${TraceId}</TraceId>
+                        <GroupId>${GroupId}</GroupId>
+                        <CompanyId>${CompanyId}</CompanyId>
+            </fc:body>
+</fc:request>
+]]>
+		</body>
+	</command>	
+	
+	
+	
+	
+	
+	<command id="invpn.crear.suscriptor">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>${TraceId}</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>${TraceId}</TraceId>
+                        <CompanyId>${CompanyId}</CompanyId>
+                        <GroupId>${GroupId}</GroupId>
+                        <Plan>${Plan}</Plan>
+                        <Imsi>${Imsi}</Imsi>
+                        <UserId>${UserId}</UserId>
+                        <NumberName>${NumberName}</NumberName>
+            </fc:body>
+</fc:request>
+]]>
+
+		</body>
+	</command>
+	
+	
+		<command id="invpn.consultar.suscriptor">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <TraceId>${TraceId}</TraceId>
+                        <fc:target>invpn.consultar.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>${TraceId}</TraceId>
+                        <CompanyId>${CompanyId}</CompanyId>
+                        <GroupId>${GroupId}</GroupId>
+                        <Plan>${Plan}</Plan>
+                        <UserId>${UserId}</UserId>
+                        <NumberName>${NumberName}</NumberName>
+            </fc:body>
+
+</fc:request>
+]]>
+
+		</body>
+	</command>
+	
+		<command id="invpn.eliminar.suscriptor">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <TraceId>${TraceId}</TraceId>
+                        <fc:target>invpn.eliminar.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>${TraceId}</TraceId>
+                        <CompanyId>${CompanyId}</CompanyId>
+                        <GroupId>${GroupId}</GroupId>
+                        <Plan>${Plan}</Plan>
+                        <UserId>${UserId}</UserId>
+                        <NumberName>${NumberName}</NumberName>            
+                        <Imsi>${Imsi}</Imsi>
+            </fc:body>
+</fc:request>
+]]>
+
+		</body>
+	</command>
+	
+	
+	<command id="invpn.crear.parcial.suscriptor">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>${TraceId}</fc:TraceId>
+                        <fc:target>invpn.crear.parcial.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>${TraceId}</TraceId>
+                        <CompanyId>${CompanyId}</CompanyId>
+                        <GroupId>${GroupId}</GroupId>
+                        <Plan>${Plan}</Plan>
+                        <UserId>${UserId}</UserId>
+                        <NumberName>${NumberName}</NumberName>            
+            </fc:body>
+</fc:request>
+]]>
+
+		</body>
+	</command>
+
+	<command id="invpn.eliminar.parcial.suscriptor">
+		<parameters>
+			<param name="CompanyId" required="true" />
+		</parameters>
+		<body type="byName">
+<![CDATA[
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+			<fc:header>
+                        <TraceId>${TraceId}</TraceId>
+                        <fc:target>invpn.eliminar.parcial.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>${TraceId}</TraceId>
+                        <CompanyId>${CompanyId}</CompanyId>
+                        <GroupId>${GroupId}</GroupId>
+                        <Plan>${Plan}</Plan>
+                        <UserId>${UserId}</UserId>                        
+            </fc:body>
+</fc:request>
+]]>
+
+		</body>
+	</command>
+
+	
+</areclient-config>
+
+
+
+

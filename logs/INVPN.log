@@ -1,0 +1,505 @@
+[2013Nov05 16:28:26,449][INFO ][configurarLogger BSSIntLogger.java:67][APLICACION: INVPN - VERSION: 1.0]
+[2013Nov05 16:28:26,463][INFO ][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - INVPN]
+[2013Nov05 16:28:26,756][INFO ][proccessRequest RequestAgent.java:23][
+
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>8024448</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                       <TraceId>8024448</TraceId>
+                        <CompanyId>12036242</CompanyId>
+                        <GroupId>G12036242</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021002005479</Imsi>
+                        <UserId>4128024448</UserId>
+                        <NumberName>94448</NumberName>                       
+                        <GroupName>Eduardo Parilli</GroupName>                        
+                        <CompanyName>Eduardo Parilli</CompanyName>
+            </fc:body>
+</fc:request>
+
+            ]
+[2013Nov05 16:28:26,783][INFO ][ejbCreate DispatcherAgentBean.java:88][inicializando... ejb]
+[2013Nov05 16:28:26,795][INFO ][processRequest InvpnServiceFacadeBean.java:63][
+
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>8024448</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                       <TraceId>8024448</TraceId>
+                        <CompanyId>12036242</CompanyId>
+                        <GroupId>G12036242</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021002005479</Imsi>
+                        <UserId>4128024448</UserId>
+                        <NumberName>94448</NumberName>                       
+                        <GroupName>Eduardo Parilli</GroupName>                        
+                        <CompanyName>Eduardo Parilli</CompanyName>
+            </fc:body>
+</fc:request>
+
+            ]
+[2013Nov05 16:28:28,570][INFO ][processRequest InvpnRC.java:63][8024448][Inicio de Servicio: invpn.crear.suscriptor]
+[2013Nov05 16:28:29,343][INFO ][execute LocalRequestDelegator.java:48][Invocando el servicio recursivo: invpn.crear.vpn - ve.com.digitel.invpn.model.InvpnRequest{ | header: {target=invpn.crear.suscriptor, TraceId=8024448} | context: {GroupName=Eduardo Parilli, GroupId=G12036242, UserId=4128024448, CompanyId=12036242, Plan=BASICO, CompanyName=Eduardo Parilli}}]
+[2013Nov05 16:28:29,345][INFO ][processRequest InvpnRC.java:63][8024448][Inicio de Servicio: invpn.crear.vpn]
+[2013Nov05 16:28:29,398][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 1.0 -- PARAMETROS: {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli}]
+[2013Nov05 16:28:29,400][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:30,421][INFO ][processRequest MoFacadeBean.java:64][1.0 - {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli}]
+[2013Nov05 16:28:30,439][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 1.0 - Parametros: {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli}]
+[2013Nov05 16:28:30,630][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":referenceId,12036242:language,Spanish:name,"Eduardo Parilli":logging,Activated;]
+[2013Nov05 16:28:31,501][INFO ][execute StatefullAgent.java:97][Parametros: {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli} - Respuesta: RESP:9333;]
+[2013Nov05 16:28:31,536][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=3014, info=(Resp:9333;) CAI - Error en comando. Objeto referenciado ya existe, reason=, context={RESP=9333}}]
+[2013Nov05 16:28:31,544][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 1.0 -- RESPUESTA: {code=3014, info=(Resp:9333;) CAI - Error en comando. Objeto referenciado ya existe, reason=, context={RESP=9333}}]
+[2013Nov05 16:28:31,566][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.0 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:31,567][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:32,573][INFO ][processRequest MoFacadeBean.java:64][5.0 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:32,575][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.0 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:32,608][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":referenceId,4128024448:language,Spanish:name,4128024448:logging,Activated;]
+[2013Nov05 16:28:32,909][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:32,914][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:32,918][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.0 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:32,927][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.1 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:32,929][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:33,934][INFO ][processRequest MoFacadeBean.java:64][5.1 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:33,936][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.1 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:33,963][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":status,Activated:vpnCustomerIdOrCostDistributionCode,12:vpnServiceSubscriptionName,JVPN;]
+[2013Nov05 16:28:34,221][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:34,226][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:34,230][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.1 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:34,239][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.2 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:34,240][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:35,246][INFO ][processRequest MoFacadeBean.java:64][5.2 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:35,248][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.2 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:35,278][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"vpnServiceUserDataName=JVPN,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":vpnMobileChargingNumber,4128024448:vpnServiceUserDataName,JVPN;]
+[2013Nov05 16:28:35,368][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:35,373][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:35,377][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.2 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:35,390][INFO ][init LocalClassDelegator.java:40][{cond:match=ve.com.digitel.invpn.rc.filtros.Match, cond:igualdad=ve.com.digitel.invpn.rc.filtros.Igualdad}]
+[2013Nov05 16:28:35,409][INFO ][execute LocalClassDelegator.java:99][cond:match - ve.com.digitel.invpn.model.InvpnRequest{ | header: {target=invpn.crear.suscriptor, TraceId=8024448} | context: {lvalor=BASICO, rvalor=^(MEDIO|AVANZADO)$}}]
+[2013Nov05 16:28:35,442][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.4 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:35,444][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:36,449][INFO ][processRequest MoFacadeBean.java:64][5.4 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:36,451][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.4 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:36,478][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"ocsFeatureSubscriptionName=OCS,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":scDefaultBarring,UndefinedSet:scDefaultAllowing,UndefinedSet:ocsFeatureSubscriptionName,OCS;]
+[2013Nov05 16:28:36,672][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:36,677][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:36,681][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.4 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:36,690][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.5 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:36,691][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:37,696][INFO ][processRequest MoFacadeBean.java:64][5.5 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:37,698][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.5 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:37,725][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"icsFeatureSubscriptionName=ICS,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":scDefaultBarring,UndefinedSet:scDefaultAllowing,UndefinedSet:icsFeatureSubscriptionName,ICS;]
+[2013Nov05 16:28:37,859][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:37,864][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:37,867][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.5 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:37,877][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.6 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:37,878][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:38,883][INFO ][processRequest MoFacadeBean.java:64][5.6 - {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:38,885][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.6 - Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:28:38,929][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"vpnNumberName=94448,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":vpnPrivateNumber,94448:vpnProtocolClass,Undefined:vpnPublicNumber,584128024448:vpnPrepaidPersonalCall,Deactivated:vpnPrepaidBusinessCall,Deactivated:vpnNumberName,94448:vpnConnectionType,Mobile:vpnTermTrigAccessType,Applicable:vpnDestinationNumber,584128024448;]
+[2013Nov05 16:28:39,768][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:39,772][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:39,776][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.6 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:39,785][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 7.0 -- PARAMETROS: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:28:39,787][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:40,792][INFO ][processRequest MoFacadeBean.java:64][7.0 - {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:28:40,794][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 7.0 - Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:28:40,850][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: SAS3
+0
+SAS_ACTION LOGIN
+LOGIN INVPN
+PASSWORD digitel412
+$END$
+
+SAS3
+0
+SAS_ACTION REQUEST
+ORDER_NO O8024448
+REQ_USER INVPN
+RESP_QUEUE_ID O8024448
+NE_TYPE HLR
+REQ_TYPE 2
+REQ_OBJ 1
+IMSI1 734021002005479
+MSISDN1 4128024448
+SUPP_CODES O53001
+ORIG_SCP 584120000510
+ORIG_SKEY 4014
+ORIG_DEFCH C
+ORIG_CAP 2
+$END$
+
+SAS3
+0
+SAS_ACTION LOGOUT
+$END$//O8024448]
+[2013Nov05 16:28:40,904][INFO ][execute StatefullAgent.java:97][Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:40,909][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:40,913][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 7.0 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:40,922][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 7.1 -- PARAMETROS: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:28:40,924][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:28:41,929][INFO ][processRequest MoFacadeBean.java:64][7.1 - {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:28:41,931][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 7.1 - Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:28:41,963][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: SAS3
+0
+SAS_ACTION LOGIN
+LOGIN INVPN
+PASSWORD digitel412
+$END$
+
+SAS3
+0
+SAS_ACTION REQUEST
+ORDER_NO T8024448
+REQ_USER INVPN
+RESP_QUEUE_ID T8024448
+NE_TYPE HLR
+REQ_TYPE 2
+REQ_OBJ 1
+IMSI1 734021002005479
+MSISDN1 4128024448
+SUPP_CODES O53003
+TERM_SCP 584120000510
+TERM_SKEY 4015
+TERM_DEFCH C
+LI Y
+SI Y
+TERM_CAP 2
+$END$
+
+SAS3
+0
+SAS_ACTION LOGOUT
+$END$//T8024448]
+[2013Nov05 16:28:41,995][INFO ][execute StatefullAgent.java:97][Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:28:42,000][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:28:42,003][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 7.1 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:18,237][INFO ][proccessRequest RequestAgent.java:23][
+
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>8024448</fc:TraceId>
+                        <fc:target>invpn.eliminar.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                       <TraceId>8024448</TraceId>
+                        <CompanyId>12036242</CompanyId>
+                        <GroupId>G12036242</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021002005479</Imsi>
+                        <UserId>4128024448</UserId>
+                        <NumberName>94448</NumberName>                       
+                        <GroupName>Eduardo Parilli</GroupName>                        
+                        <CompanyName>Eduardo Parilli</CompanyName>
+            </fc:body>
+</fc:request>
+
+            ]
+[2013Nov05 16:29:18,246][INFO ][processRequest InvpnServiceFacadeBean.java:63][
+
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>8024448</fc:TraceId>
+                        <fc:target>invpn.eliminar.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                       <TraceId>8024448</TraceId>
+                        <CompanyId>12036242</CompanyId>
+                        <GroupId>G12036242</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021002005479</Imsi>
+                        <UserId>4128024448</UserId>
+                        <NumberName>94448</NumberName>                       
+                        <GroupName>Eduardo Parilli</GroupName>                        
+                        <CompanyName>Eduardo Parilli</CompanyName>
+            </fc:body>
+</fc:request>
+
+            ]
+[2013Nov05 16:29:18,259][INFO ][processRequest InvpnRC.java:63][8024448][Inicio de Servicio: invpn.eliminar.suscriptor]
+[2013Nov05 16:29:18,273][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 6.5 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:18,274][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:29:19,279][INFO ][processRequest MoFacadeBean.java:64][6.5 - {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:19,281][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 6.5 - Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:19,312][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: DELETE:MO_JAS:DN,"vpnNumberName=94448,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA";]
+[2013Nov05 16:29:19,962][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:29:19,967][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:19,971][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 6.5 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:19,980][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 6.4 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:19,981][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:29:20,986][INFO ][processRequest MoFacadeBean.java:64][6.4 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:20,989][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 6.4 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:21,015][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: DELETE:MO_JAS:DN,"referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA";]
+[2013Nov05 16:29:21,197][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:29:21,202][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:21,206][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 6.4 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:21,215][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 7.5 -- PARAMETROS: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:29:21,216][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:29:22,221][INFO ][processRequest MoFacadeBean.java:64][7.5 - {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:29:22,223][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 7.5 - Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:29:22,255][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: SAS3
+0
+SAS_ACTION LOGIN
+LOGIN INVPN
+PASSWORD digitel412
+$END$
+
+SAS3
+0
+SAS_ACTION REQUEST
+ORDER_NO O8024448
+REQ_USER INVPN
+RESP_QUEUE_ID O8024448
+NE_TYPE HLR
+REQ_TYPE 2
+REQ_OBJ 1
+IMSI1 734021002005479
+MSISDN1 4128024448
+SUPP_CODES O52001
+$END$
+
+SAS3
+0
+SAS_ACTION LOGOUT
+$END$//O8024448]
+[2013Nov05 16:29:22,288][INFO ][execute StatefullAgent.java:97][Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:29:22,293][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:22,296][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 7.5 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:22,306][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 7.6 -- PARAMETROS: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:29:22,307][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:29:23,312][INFO ][processRequest MoFacadeBean.java:64][7.6 - {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:29:23,314][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 7.6 - Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:29:23,346][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: SAS3
+0
+SAS_ACTION LOGIN
+LOGIN INVPN
+PASSWORD digitel412
+$END$
+
+SAS3
+0
+SAS_ACTION REQUEST
+ORDER_NO T8024448
+REQ_USER INVPN
+RESP_QUEUE_ID T8024448
+NE_TYPE HLR
+REQ_TYPE 2
+REQ_OBJ 1
+IMSI1 734021002005479
+MSISDN1 4128024448
+SUPP_CODES O52003
+$END$
+
+SAS3
+0
+SAS_ACTION LOGOUT
+$END$//T8024448]
+[2013Nov05 16:29:23,380][INFO ][execute StatefullAgent.java:97][Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:29:23,385][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:23,388][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 7.6 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:29:23,399][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 6.5 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:23,401][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:29:24,407][INFO ][processRequest MoFacadeBean.java:64][6.5 - {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:24,410][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 6.5 - Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:29:24,425][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: DELETE:MO_JAS:DN,"vpnNumberName=94448,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA";]
+[2013Nov05 16:29:24,537][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:9356;]
+[2013Nov05 16:29:24,543][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=3044, info=(Resp:9356;) CAI - El objeto referenciado por el COMANDO no existe, reason=, context={RESP=9356}}]
+[2013Nov05 16:29:24,547][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 6.5 -- RESPUESTA: {code=3044, info=(Resp:9356;) CAI - El objeto referenciado por el COMANDO no existe, reason=, context={RESP=9356}}]
+[2013Nov05 16:31:45,704][INFO ][proccessRequest RequestAgent.java:23][
+
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>8024448</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                       <TraceId>8024448</TraceId>
+                        <CompanyId>12036242</CompanyId>
+                        <GroupId>G12036242</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021002005479</Imsi>
+                        <UserId>4128024448</UserId>
+                        <NumberName>94448</NumberName>                       
+                        <GroupName>Eduardo Parilli</GroupName>                        
+                        <CompanyName>Eduardo Parilli</CompanyName>
+            </fc:body>
+</fc:request>
+
+            ]
+[2013Nov05 16:31:45,714][INFO ][processRequest InvpnServiceFacadeBean.java:63][
+
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>8024448</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                       <TraceId>8024448</TraceId>
+                        <CompanyId>12036242</CompanyId>
+                        <GroupId>G12036242</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021002005479</Imsi>
+                        <UserId>4128024448</UserId>
+                        <NumberName>94448</NumberName>                       
+                        <GroupName>Eduardo Parilli</GroupName>                        
+                        <CompanyName>Eduardo Parilli</CompanyName>
+            </fc:body>
+</fc:request>
+
+            ]
+[2013Nov05 16:31:45,727][INFO ][processRequest InvpnRC.java:63][8024448][Inicio de Servicio: invpn.crear.suscriptor]
+[2013Nov05 16:31:45,734][INFO ][execute LocalRequestDelegator.java:48][Invocando el servicio recursivo: invpn.crear.vpn - ve.com.digitel.invpn.model.InvpnRequest{ | header: {target=invpn.crear.suscriptor, TraceId=8024448} | context: {GroupName=Eduardo Parilli, GroupId=G12036242, UserId=4128024448, CompanyId=12036242, Plan=BASICO, CompanyName=Eduardo Parilli}}]
+[2013Nov05 16:31:45,736][INFO ][processRequest InvpnRC.java:63][8024448][Inicio de Servicio: invpn.crear.vpn]
+[2013Nov05 16:31:45,743][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 1.0 -- PARAMETROS: {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli}]
+[2013Nov05 16:31:45,744][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:46,752][INFO ][processRequest MoFacadeBean.java:64][1.0 - {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli}]
+[2013Nov05 16:31:46,754][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 1.0 - Parametros: {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli}]
+[2013Nov05 16:31:46,770][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":referenceId,12036242:language,Spanish:name,"Eduardo Parilli":logging,Activated;]
+[2013Nov05 16:31:46,880][INFO ][execute StatefullAgent.java:97][Parametros: {CompanyId=12036242, TraceId=8024448, CompanyName=Eduardo Parilli} - Respuesta: RESP:9333;]
+[2013Nov05 16:31:46,886][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=3014, info=(Resp:9333;) CAI - Error en comando. Objeto referenciado ya existe, reason=, context={RESP=9333}}]
+[2013Nov05 16:31:46,890][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 1.0 -- RESPUESTA: {code=3014, info=(Resp:9333;) CAI - Error en comando. Objeto referenciado ya existe, reason=, context={RESP=9333}}]
+[2013Nov05 16:31:46,910][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.0 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:46,912][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:47,917][INFO ][processRequest MoFacadeBean.java:64][5.0 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:47,919][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.0 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:47,934][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":referenceId,4128024448:language,Spanish:name,4128024448:logging,Activated;]
+[2013Nov05 16:31:48,062][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:48,068][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:48,072][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.0 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:48,081][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.1 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:48,082][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:49,088][INFO ][processRequest MoFacadeBean.java:64][5.1 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:49,090][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.1 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:49,105][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":status,Activated:vpnCustomerIdOrCostDistributionCode,12:vpnServiceSubscriptionName,JVPN;]
+[2013Nov05 16:31:49,236][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:49,241][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:49,245][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.1 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:49,254][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.2 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:49,256][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:50,261][INFO ][processRequest MoFacadeBean.java:64][5.2 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:50,263][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.2 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:50,278][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"vpnServiceUserDataName=JVPN,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":vpnMobileChargingNumber,4128024448:vpnServiceUserDataName,JVPN;]
+[2013Nov05 16:31:50,372][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:50,377][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:50,381][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.2 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:50,390][INFO ][execute LocalClassDelegator.java:99][cond:match - ve.com.digitel.invpn.model.InvpnRequest{ | header: {target=invpn.crear.suscriptor, TraceId=8024448} | context: {lvalor=BASICO, rvalor=^(MEDIO|AVANZADO)$}}]
+[2013Nov05 16:31:50,401][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.4 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:50,403][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:51,408][INFO ][processRequest MoFacadeBean.java:64][5.4 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:51,410][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.4 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:51,425][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"ocsFeatureSubscriptionName=OCS,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":scDefaultBarring,UndefinedSet:scDefaultAllowing,UndefinedSet:ocsFeatureSubscriptionName,OCS;]
+[2013Nov05 16:31:51,554][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:51,560][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:51,563][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.4 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:51,573][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.5 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:51,574][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:52,579][INFO ][processRequest MoFacadeBean.java:64][5.5 - {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:52,582][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.5 - Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:52,596][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"icsFeatureSubscriptionName=ICS,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":scDefaultBarring,UndefinedSet:scDefaultAllowing,UndefinedSet:icsFeatureSubscriptionName,ICS;]
+[2013Nov05 16:31:52,749][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:52,754][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:52,758][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.5 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:52,768][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 5.6 -- PARAMETROS: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:52,769][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:53,774][INFO ][processRequest MoFacadeBean.java:64][5.6 - {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:53,776][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 5.6 - Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448}]
+[2013Nov05 16:31:53,791][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: CREATE:MO_JAS:DN,"vpnNumberName=94448,vpnServiceSubscriptionName=JVPN,referenceId=4128024448,referenceId=G12036242,referenceId=12036242,providerName=Digitel,applicationName=JasManObj,nodeName=JAMBALA":vpnPrivateNumber,94448:vpnProtocolClass,Undefined:vpnPublicNumber,584128024448:vpnPrepaidPersonalCall,Deactivated:vpnPrepaidBusinessCall,Deactivated:vpnNumberName,94448:vpnConnectionType,Mobile:vpnTermTrigAccessType,Applicable:vpnDestinationNumber,584128024448;]
+[2013Nov05 16:31:53,955][INFO ][execute StatefullAgent.java:97][Parametros: {GroupId=G12036242, UserId=4128024448, NumberName=94448, CompanyId=12036242, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:53,960][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:53,964][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 5.6 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:53,973][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 7.0 -- PARAMETROS: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:31:53,974][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:54,980][INFO ][processRequest MoFacadeBean.java:64][7.0 - {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:31:54,982][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 7.0 - Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:31:54,997][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: SAS3
+0
+SAS_ACTION LOGIN
+LOGIN INVPN
+PASSWORD digitel412
+$END$
+
+SAS3
+0
+SAS_ACTION REQUEST
+ORDER_NO O8024448
+REQ_USER INVPN
+RESP_QUEUE_ID O8024448
+NE_TYPE HLR
+REQ_TYPE 2
+REQ_OBJ 1
+IMSI1 734021002005479
+MSISDN1 4128024448
+SUPP_CODES O53001
+ORIG_SCP 584120000510
+ORIG_SKEY 4014
+ORIG_DEFCH C
+ORIG_CAP 2
+$END$
+
+SAS3
+0
+SAS_ACTION LOGOUT
+$END$//O8024448]
+[2013Nov05 16:31:55,030][INFO ][execute StatefullAgent.java:97][Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:55,035][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:55,039][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 7.0 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:55,048][INFO ][execute DNMOAdapter.java:98][### INICIO COMANDO: 7.1 -- PARAMETROS: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:31:55,049][INFO ][execute DNMOAdapter.java:104][------------> invpn.ejb.MoFacade]
+[2013Nov05 16:31:56,055][INFO ][processRequest MoFacadeBean.java:64][7.1 - {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:31:56,057][INFO ][execute Controller.java:67][TraceId: 8024448 - Comando: 7.1 - Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448}]
+[2013Nov05 16:31:56,072][INFO ][execute StatefullAgent.java:92][Comando a ejecutar: SAS3
+0
+SAS_ACTION LOGIN
+LOGIN INVPN
+PASSWORD digitel412
+$END$
+
+SAS3
+0
+SAS_ACTION REQUEST
+ORDER_NO T8024448
+REQ_USER INVPN
+RESP_QUEUE_ID T8024448
+NE_TYPE HLR
+REQ_TYPE 2
+REQ_OBJ 1
+IMSI1 734021002005479
+MSISDN1 4128024448
+SUPP_CODES O53003
+TERM_SCP 584120000510
+TERM_SKEY 4015
+TERM_DEFCH C
+LI Y
+SI Y
+TERM_CAP 2
+$END$
+
+SAS3
+0
+SAS_ACTION LOGOUT
+$END$//T8024448]
+[2013Nov05 16:31:56,105][INFO ][execute StatefullAgent.java:97][Parametros: {Imsi=734021002005479, UserId=4128024448, TraceId=8024448} - Respuesta: RESP:0;]
+[2013Nov05 16:31:56,110][INFO ][execute Controller.java:101][TraceId: 8024448 - Response: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]
+[2013Nov05 16:31:56,113][INFO ][execute DNMOAdapter.java:119][### FIN COMANDO: 7.1 -- RESPUESTA: {code=0, info=Proceso completado satisfactoriamente, reason=, context={RESP=0}}]

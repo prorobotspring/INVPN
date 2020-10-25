@@ -1,0 +1,189 @@
+# parametros de conexion para la BD de Kenan
+driverDeBD=oracle.jdbc.driver.OracleDriver
+#urlDeBDKenan=jdbc:oracle:thin:@10.27.31.91:1521:KFXPROD
+#usuarioDeBDKenan=CVPNFX
+#passwordDeBDKenan=digitel412
+urlDeBDKenan=jdbc:oracle:thin:@10.27.31.20:1521:FXDEV11
+usuarioDeBDKenan=arbor
+passwordDeBDKenan=arbor412
+
+# parametros de conexion para la BD de CVPN
+urlDeBDCvpn=jdbc:oracle:thin:@10.27.31.67:1521:prydb
+usuarioDeBDCvpn=cvpn
+passwordDeBDCvpn=digitel412
+
+# nivel del log, ver java.util.logging.Level
+nivelDeLog=ALL
+
+# datos para inserción de una vpn
+vpnCorp.nota=Sincronización de VPN
+vpnCorp.cambia=catorres
+vpnCorp.plan=889
+
+#queries de la aplicación
+cvpn.query.CuentasValidasEnKenan=\
+SELECT \
+DISTINCT CMF.HIERARCHY_ID AS CUENTA, eimap.EXTERNAL_ID AS GSM, packval.DISPLAY_VALUE AS PLAN \
+, eimap2.EXTERNAL_ID AS IMSI, (CMF.BILL_FNAME || ' ' || CMF.BILL_LNAME) AS CompanyName \
+, P.COMPONENT_ID, d.DISPLAY_VALUE, cmfpc.PACKAGE_ID, packval.DISPLAY_VALUE  \
+FROM \
+SERVICE_VIEW ser, \
+EXTERNAL_ID_EQUIP_MAP_VIEW eimap, \
+EXTERNAL_ID_EQUIP_MAP_VIEW eimap2, \
+CMF_PACKAGE_COMPONENT cmfpc, \
+CMF_PACKAGE cmfpack, \
+CMF CMF, \
+PACKAGE_DEFINITION_VALUES packval \
+,PRODUCT P, COMPONENT_DEFINITION_VALUES d \
+WHERE \
+ser.VIEW_STATUS=2 \
+AND ser.SERVICE_ACTIVE_DT < SYSDATE \
+AND (ser.SERVICE_INACTIVE_DT IS NULL OR ser.SERVICE_INACTIVE_DT > SYSDATE) \
+AND ser.SUBSCR_NO=eimap.SUBSCR_NO \
+AND ser.SUBSCR_NO_RESETS=eimap.SUBSCR_NO_RESETS \
+AND eimap.VIEW_STATUS=2 \
+AND eimap.ACTIVE_DATE < SYSDATE  \
+AND (eimap.INACTIVE_DATE IS NULL OR eimap.INACTIVE_DATE > SYSDATE) \
+AND eimap.EXTERNAL_ID_TYPE IN (11)  \
+AND ser.SUBSCR_NO=eimap2.SUBSCR_NO \
+AND ser.SUBSCR_NO_RESETS=eimap2.SUBSCR_NO_RESETS \
+AND eimap2.VIEW_STATUS=2 \
+AND eimap2.ACTIVE_DATE < SYSDATE  \
+AND (eimap2.INACTIVE_DATE IS NULL OR eimap2.INACTIVE_DATE > SYSDATE) \
+AND eimap2.EXTERNAL_ID_TYPE IN (10)  \
+AND cmfpc.ACTIVE_DT < SYSDATE \
+AND (cmfpc.INACTIVE_DT IS NULL OR cmfpc.INACTIVE_DT > SYSDATE) \
+AND cmfpc.PARENT_SUBSCR_NO=ser.SUBSCR_NO \
+AND cmfpc.PARENT_SUBSCR_NO_RESETS=ser.SUBSCR_NO_RESETS \
+AND cmfpc.PACKAGE_INST_ID=cmfpack.PACKAGE_INST_ID \
+AND cmfpc.PACKAGE_INST_ID_SERV=cmfpack.PACKAGE_INST_ID_SERV \
+AND cmfpack.ACTIVE_DT < SYSDATE \
+AND (cmfpack.INACTIVE_DT IS NULL OR cmfpack.INACTIVE_DT > SYSDATE) \
+AND cmfpack.PARENT_ACCOUNT_NO=CMF.ACCOUNT_NO \
+AND packval.LANGUAGE_CODE=1 \
+AND packval.PACKAGE_ID IN ( SELECT DISTINCT pc.PACKAGE_ID \
+FROM   PACKAGE_COMPONENT_MEMBERS pcm, USAGE_TYPE_GROUPS u, \
+	   PRODUCT_ELEMENTS p, \
+	   PACKAGE_COMPONENTS pc \
+WHERE  pc.COMPONENT_ID = pcm.COMPONENT_ID \
+AND    pcm.MEMBER_ID = p.ELEMENT_ID \
+AND    p.TYPE_GROUP_USG = u.TYPE_GROUP_USG \
+AND    u.TYPE_GROUP_USG = 21 ) \
+AND cmfpack.PACKAGE_ID=packval.PACKAGE_ID \
+AND CMF.DATE_ACTIVE < SYSDATE \
+AND (CMF.DATE_INACTIVE IS NULL OR CMF.DATE_INACTIVE > SYSDATE) \
+AND ser.PARENT_ACCOUNT_NO = P.PARENT_ACCOUNT_NO \
+ AND  ser.SUBSCR_NO = P.PARENT_SUBSCR_NO  \
+ AND cmfpc.COMPONENT_ID = P.COMPONENT_ID \
+ AND cmfpc.COMPONENT_ID = d.COMPONENT_ID AND d.LANGUAGE_CODE=1 AND P.COMPONENT_ID IN (800,801,802) \
+ AND cmfpc.PARENT_ACCOUNT_NO = P.PARENT_ACCOUNT_NO \
+ AND cmfpc.PARENT_SUBSCR_NO = P.PARENT_SUBSCR_NO \
+ AND cmfpc.INACTIVE_DT IS NULL \
+ AND cmfpc.PACKAGE_ID = packval.PACKAGE_ID AND packval.LANGUAGE_CODE=1 \
+ ORDER BY CMF.HIERARCHY_ID, eimap.EXTERNAL_ID, packval.DISPLAY_VALUE
+
+cvpn.query.GsmsDeUnaCuentaKenan=SELECT EIEM.EXTERNAL_ID AS GSM, \
+CMF.Account_no AS CUENTA, \
+PDV.DISPLAY_VALUE AS PLAN \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+,EIEM2.EXTERNAL_ID AS IMSI \
+-- FIN: Para obtener IMSI - Proyecto IN-VPN \
+FROM   CMF, arbor.EXTERNAL_ID_EQUIP_MAP  EIEM, \
+ arbor.EXTERNAL_ID_EQUIP_MAP  EIEM2, \
+       CMF_PACKAGE_COMPONENT CPC, \
+       PACKAGE_DEFINITION_VALUES PDV \
+WHERE \
+       CMF.hierarchy_id=? \
+AND    CMF.account_no= EIEM.ACCOUNT_NO \
+AND    EIEM.external_id_type IN (11) \
+AND    EIEM.inactive_date IS NULL \
+AND    EIEM.SUBSCR_NO= CPC.PARENT_SUBSCR_NO \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+AND    CMF.account_no= EIEM2.ACCOUNT_NO \
+AND    EIEM2.external_id_type IN (10) \
+AND    EIEM2.inactive_date IS NULL \
+AND    EIEM2.SUBSCR_NO= CPC.PARENT_SUBSCR_NO \
+-- FIN: Para obtener IMSI - Proyecto IN-VPN \
+AND    CPC.inactive_dt IS NULL \
+AND    CPC.package_id NOT IN (21000,21001,21002,21003,21004,21005,21006,21007) \
+AND    CPC.component_inst_id = (SELECT MAX(component_inst_id) FROM CMF_PACKAGE_COMPONENT CPC2 \
+WHERE  CPC2.PARENT_SUBSCR_NO = CPC.PARENT_SUBSCR_NO \
+AND    CPC2.inactive_dt IS NULL AND CPC2.package_id NOT IN (21000,21001,21002,21003,21004,21005,21006,21007)) \
+AND    CPC.PACKAGE_ID=PDV.PACKAGE_ID \
+AND    pdv.LANGUAGE_CODE=1 \
+AND    pdv.package_id IN (SELECT DISTINCT pc.PACKAGE_ID \
+FROM   PACKAGE_COMPONENT_MEMBERS pcm, USAGE_TYPE_GROUPS u, \
+	   PRODUCT_ELEMENTS p, \
+	   PACKAGE_COMPONENTS pc \
+WHERE  pc.COMPONENT_ID = pcm.COMPONENT_ID \
+AND    pcm.MEMBER_ID = p.ELEMENT_ID \
+AND    p.TYPE_GROUP_USG = u.TYPE_GROUP_USG \
+AND    u.TYPE_GROUP_USG = 21) \
+ORDER BY PDV.DISPLAY_VALUE
+
+cvpn.query.VerSiHayCambioDeLineaAntesDeBorrar=\
+SELECT extnuevo.EXTERNAL_ID gsmnuevo \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+, imsinuevo.EXTERNAL_ID IMSI  \
+-- FIN: Para obtener IMSI / Proyecto IN-VPN \
+FROM EXTERNAL_ID_EQUIP_MAP extviejo, \
+EXTERNAL_ID_EQUIP_MAP extnuevo \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+, EXTERNAL_ID_EQUIP_MAP imsinuevo \
+-- FIN: Para obtener IMSI / Proyecto IN-VPN \
+WHERE extviejo.EXTERNAL_ID=? \
+AND extviejo.external_id_type IN (31) \
+AND extviejo.active_date < SYSDATE
+AND (extviejo.inactive_date IS NULL OR extviejo.inactive_date > SYSDATE) \
+AND extviejo.SUBSCR_NO=extnuevo.SUBSCR_NO \
+AND extviejo.SUBSCR_NO_RESETS=extnuevo.SUBSCR_NO_RESETS \
+AND extnuevo.external_id_type IN (11) \
+AND extnuevo.active_date < SYSDATE \
+AND (extnuevo.inactive_date IS NULL OR extnuevo.inactive_date > SYSDATE) \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+AND imsinuevo.SUBSCR_NO=extnuevo.SUBSCR_NO \
+AND imsinuevo.SUBSCR_NO_RESETS=extnuevo.SUBSCR_NO_RESETS \
+AND imsinuevo.external_id_type IN (10) \
+AND imsinuevo.active_date < SYSDATE \
+AND (imsinuevo.inactive_date IS NULL OR imsinuevo.inactive_date > SYSDATE) \
+-- FIN: Para obtener IMSI / Proyecto IN-VPN
+
+cvpn.query.VerSiHayCambioDeLineaAntesDeInsertar=\
+SELECT extviejo.EXTERNAL_ID gsmviejo \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+, imsiviejo.EXTERNAL_ID IMSI  \
+-- FIN: Para obtener IMSI / Proyecto IN-VPN \
+FROM EXTERNAL_ID_EQUIP_MAP extviejo, \
+EXTERNAL_ID_EQUIP_MAP extnuevo \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+, EXTERNAL_ID_EQUIP_MAP imsiviejo \
+-- FIN: Para obtener IMSI / Proyecto IN-VPN \
+WHERE extnuevo.EXTERNAL_ID=? \
+AND extviejo.external_id_type IN (31) \
+AND extviejo.active_date < SYSDATE \
+AND (extviejo.inactive_date IS NULL OR extviejo.inactive_date > SYSDATE) \
+AND extviejo.SUBSCR_NO=extnuevo.SUBSCR_NO \
+AND extviejo.SUBSCR_NO_RESETS=extnuevo.SUBSCR_NO_RESETS \
+AND extnuevo.external_id_type IN (11) \
+AND extnuevo.active_date < SYSDATE \
+AND (extnuevo.inactive_date IS NULL OR extnuevo.inactive_date > SYSDATE) \
+-- INICIO: Para obtener IMSI / Proyecto IN-VPN \
+AND imsiviejo.SUBSCR_NO=extviejo.SUBSCR_NO \
+AND imsiviejo.SUBSCR_NO_RESETS=extviejo.SUBSCR_NO_RESETS \
+AND imsiviejo.external_id_type IN (10) \
+AND imsiviejo.active_date < SYSDATE \
+AND (imsiviejo.inactive_date IS NULL OR imsiviejo.inactive_date > SYSDATE) \
+-- FIN: Para obtener IMSI / Proyecto IN-VPN
+
+cvpn.query.BuscarEnCvpnCambioDeLinea= \
+SELECT NU_MSISDN, ID_VPN, ID_USER FROM VPN_CORP where nu_msisdn=?
+
+cvpn.update.ActualizarParaCambioDeLinea=UPDATE VPN_CORP SET in_status='U',NU_MSISDN=? where id_vpn=? AND NU_MSISDN=? AND IN_STATUS<>'A'
+
+
+cvpn.query.CargarMapaDePlanes=SELECT ID_PLAN, TX_PLAN FROM VPN_CORP_CONFIG ORDER BY TX_PLAN ASC
+
+cvpn.query.TraerNombreDeLaEmpresaParaCuenta=SELECT NVL(SUBSTR((CMF.BILL_FNAME || ' ' || CMF.BILL_LNAME),1,30),'Nombre no configurado en Kenan') FROM CMF WHERE ACCOUNT_NO=?
+
+
+

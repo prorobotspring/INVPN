@@ -1,0 +1,13 @@
+Para ejecutarlo se debe contar con el JAVA en el PATH o definir el JAVA_HOME
+
+bin/runall.sh
+
+#ejemplo en el 10.27.31.60
+env JAVA_HOME=/appstest81/bea/jdk142_03/bin ROOT_PATH=$PWD/.. MODULE_NAME=Conciliador_Run bin/runall.sh
+
+
+o
+
+export JAVA_HOME=/appstest81/bea/jdk142_03/bin/java
+bin/runall.sh
+

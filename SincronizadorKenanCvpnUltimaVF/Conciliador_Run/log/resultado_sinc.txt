@@ -1,0 +1,1309 @@
+dentro del main!!!!!
+dentro del try!!!!
+notaParaIserciónDeVpn: null
+usuarioQueCambiaLasVpns: null
+planParaIserciónDeVpn: null
+entro en el args >1
+entro en el args >2
+dentro del try para crear el archivo log
+[2008-03-18 18:13:29,038] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:306] -> [inicio del proceso!!!!!!!!!!!!!]
+inicio del proceso!!!!!!!!!!!!!
+[2008-03-18 18:13:29,058] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:314] -> [Se va a modificar en la BD]
+Se va a modificar en la BD
+[2008-03-18 18:13:29,060] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:324] -> [No se ejecutaran las acciones de borrado de vpns y gsms sobrantes]
+[2008-03-18 18:13:29,062] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:412] -> [ENTRANDO]
+[2008-03-18 18:13:29,077] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:416] -> [Consiguio el driver de la BD]
+[2008-03-18 18:13:30,335] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:423] -> [Creo la conexión hacia Kenan]
+[2008-03-18 18:13:30,445] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:431] -> [Creo la conexión hacia CVPN]
+[2008-03-18 18:13:30,448] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:433] -> [SALIENDO]
+[2008-03-18 18:13:30,618] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:485] -> [Entra]
+[2008-03-18 18:13:31,140] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:499] -> [antes de listaDeCuentasKenan]
+[2008-03-18 18:13:31,142] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.getListaDeCuentasKenan] [SincronizadorKenanCvpn.java:952] -> [Entra]
+[2008-03-18 18:14:07,579] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.getListaDeCuentasKenan] [SincronizadorKenanCvpn.java:969] -> [Ejecuto query para traer cuentas]
+[2008-03-18 18:14:10,535] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.getListaDeCuentasKenan] [SincronizadorKenanCvpn.java:1000] -> [Trajo las cuentas válidas en Kenan]
+[2008-03-18 18:14:10,538] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.getListaDeCuentasKenan] [SincronizadorKenanCvpn.java:1002] -> [Sale]
+[2008-03-18 18:14:10,540] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:502] -> [paso por la listaDeCuentasKenan]
+[2008-03-18 18:14:10,542] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.getListaDeCuentasCvpn] [SincronizadorKenanCvpn.java:894] -> [Entra]
+[2008-03-18 18:14:14,669] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.getListaDeCuentasCvpn] [SincronizadorKenanCvpn.java:938] -> [Sale]
+[2008-03-18 18:14:14,672] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:506] -> [paso por la listaDeCuentasCvpn]
+***********************************************
++++++++++++++++++++++++++++++++++++++++++++++++
+++ Comienzo del proceso ++
++++++++++++++++++++++++++++++++++++++++++++++++
+[2008-03-18 18:14:14,674] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:514] -> [antes de borrar las sobrantes]
+[2008-03-18 18:14:14,676] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:521] -> [antes sincronizar los GSM de las cuentas existentes]
+[2008-03-18 18:14:14,678] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarLosGsmsDeLasVpnsExistentes] [SincronizadorKenanCvpn.java:842] -> [Entrando]
+[2008-03-18 18:14:14,681] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:14,683] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:14,685] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:14,687] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:14,689] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:14,692] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:14,694] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:15,639] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,642] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:15,644] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,645] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:15,647] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,649] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:15,651] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,652] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:15,723] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,725] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:15,779] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,782] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:15,864] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,866] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:15,868] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,870] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:15,872] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,873] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:15,931] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,933] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:15,992] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,994] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:15,996] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:15,998] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:15,999] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,001] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,054] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,056] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,057] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,059] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,061] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,063] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,064] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,066] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,068] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,069] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,071] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,072] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,074] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,076] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,077] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,079] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,081] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,082] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,170] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,173] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,175] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,176] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,232] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,234] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,236] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,238] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,311] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,313] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,315] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,316] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,318] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,319] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,320] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,321] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,323] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,324] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,325] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,327] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,328] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,329] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,331] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,332] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,334] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,335] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,336] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,338] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,340] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,341] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,342] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,344] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,345] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,346] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,348] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,349] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,350] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,352] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,353] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,354] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,356] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,358] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,419] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,420] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,422] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,423] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,476] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,477] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,479] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,480] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,532] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,534] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,535] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,537] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,539] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,540] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,541] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,542] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,544] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,545] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,546] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,548] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,600] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,602] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,603] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,604] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,657] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,658] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,659] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,661] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,662] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,663] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,664] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,665] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,667] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,668] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,669] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,670] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,672] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,673] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,674] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,675] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,677] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,678] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,679] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,680] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,682] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,683] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,684] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,685] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,686] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,688] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,689] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,690] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,691] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,693] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,694] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,695] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,696] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,698] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,699] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,700] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,701] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,703] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,704] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,705] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,760] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,762] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,763] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,765] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,766] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,767] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,768] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,770] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,823] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,825] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,826] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,827] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,829] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,830] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,883] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,885] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,886] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,887] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,889] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,890] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:16,891] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,892] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:16,948] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:16,949] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,001] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,003] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,004] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,005] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,007] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,008] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,009] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,010] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,012] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,013] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,015] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,016] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,017] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,018] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,020] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,021] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,022] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,023] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,025] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,040] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,041] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,043] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,044] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,045] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,046] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,048] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,049] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,050] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,051] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,053] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,054] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,055] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,057] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,058] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,059] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,060] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,061] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,062] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,115] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,117] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,178] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,179] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,181] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,182] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,183] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,184] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,185] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,186] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,188] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,189] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,190] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,191] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,192] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,209] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,210] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,211] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,212] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,213] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,215] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,216] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,268] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,270] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,271] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,272] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,273] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,274] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,275] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,277] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,278] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,279] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,331] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,332] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,334] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,335] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,388] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,390] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,391] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,392] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,393] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,394] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,448] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,449] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,539] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,540] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,593] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,594] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,595] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,597] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,598] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,599] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,600] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,601] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,602] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,604] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,605] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,606] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,607] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,609] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,610] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,611] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,612] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,614] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,615] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,616] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,677] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,685] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,686] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,687] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,688] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,689] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,741] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,742] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,743] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,744] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,746] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,747] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,814] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,815] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,817] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,818] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,819] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,820] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,821] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,822] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,823] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,825] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,881] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,882] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,883] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,884] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,885] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,887] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,888] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,889] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,890] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,891] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:17,944] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,945] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,946] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,948] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,949] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,950] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,951] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,952] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,955] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,956] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,957] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,958] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,960] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,961] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:17,962] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:17,963] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,022] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,023] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,077] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,078] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,080] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,081] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,082] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,083] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,084] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,085] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,087] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,088] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,089] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,090] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,091] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,092] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,093] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,095] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,096] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,097] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,098] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,099] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,100] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,101] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,103] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,104] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,105] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,106] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,107] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,109] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,110] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,111] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,112] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,113] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,167] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,169] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,170] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,171] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,172] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,174] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,175] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,177] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,178] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,179] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,181] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,182] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,183] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,184] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,185] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,245] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,247] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,248] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,249] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,250] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,251] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,252] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,253] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,254] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,256] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,257] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,258] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,259] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,260] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,261] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,262] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,263] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,265] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,266] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,267] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,268] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,269] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,271] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,272] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,273] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,325] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,327] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,436] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,438] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,439] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,440] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,441] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,442] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,443] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,444] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,446] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,447] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,500] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,508] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,509] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,510] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,511] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,512] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,514] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,515] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,516] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,517] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,518] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,519] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,520] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,521] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,522] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,523] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,575] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,577] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,578] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,579] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,580] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,581] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,582] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,583] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,584] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,585] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,587] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,588] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,589] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,590] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,591] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,592] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,593] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,594] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,596] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,597] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,598] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,599] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,600] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,601] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,603] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,604] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,687] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,689] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,690] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,691] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,692] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,694] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,695] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,696] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,697] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,698] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,699] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,700] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,701] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,703] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,715] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,717] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,768] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,770] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,771] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,772] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,773] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,774] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,775] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,776] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,777] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,779] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,780] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,781] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,782] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,783] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,784] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,785] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,786] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,787] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,788] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,789] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,790] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,792] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,793] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,794] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,795] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,796] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,797] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,798] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,799] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,801] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,802] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,803] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,804] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,805] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,806] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,807] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,808] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,809] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,810] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,812] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,813] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,814] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:18,866] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,867] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,868] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,869] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,871] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,872] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,873] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,875] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,876] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,877] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,878] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,879] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,880] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,881] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,882] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,883] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,884] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,886] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,887] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,888] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,889] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,890] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,891] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,892] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,893] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,894] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,895] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,896] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,897] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,898] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,900] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,900] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,902] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,903] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,904] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,905] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,906] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,907] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,908] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,909] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,910] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,911] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,912] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,913] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,914] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,915] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,917] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,918] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,919] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,920] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,921] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,922] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,923] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,924] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,926] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,927] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,957] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,958] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,959] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,960] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,961] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,962] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:18,963] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:18,964] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,016] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,024] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,025] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,026] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,027] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,028] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,029] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,030] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,031] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,032] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,034] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,034] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,036] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,037] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,038] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,039] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,040] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,041] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,042] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,043] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,044] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,045] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,046] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,047] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,048] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,049] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,050] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,051] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,052] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,053] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,054] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,055] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,056] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,057] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,058] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,059] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,060] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,061] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,062] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,063] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,064] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,065] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,066] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,067] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,068] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,069] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,070] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,071] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,073] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,074] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,075] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,076] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,077] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,078] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,079] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,080] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,081] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,082] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,083] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,084] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,085] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,086] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,087] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,088] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,089] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,090] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,091] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,092] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,093] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,094] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,095] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,096] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,097] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,098] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,099] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,100] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,101] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,102] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,103] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,104] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+[2008-03-18 18:14:19,105] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,106] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,158] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,159] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,212] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,214] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,265] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,267] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,317] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,318] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,369] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,370] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,421] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,422] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,476] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,478] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,533] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,535] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,585] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,587] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,649] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,651] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,702] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,704] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,754] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,756] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,806] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,807] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,857] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,859] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,909] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,911] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:19,962] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:19,963] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,015] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,017] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,068] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,069] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,121] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,123] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,174] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,175] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,225] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,227] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,278] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,279] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,329] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,330] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,381] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,382] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,433] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,434] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,485] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,487] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,537] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,538] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,589] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,590] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,641] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,643] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,693] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,695] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,747] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,748] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,799] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,801] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,851] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,852] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,903] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,905] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:20,957] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:20,969] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,021] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,022] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,074] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,075] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,126] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,127] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,178] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,179] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,229] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,230] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,281] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,282] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,332] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,333] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,384] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,385] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,440] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,442] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,492] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,494] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,544] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,545] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,595] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,597] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,647] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,648] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,699] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,700] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,753] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,754] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,805] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,806] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,857] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,858] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,909] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,910] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:21,961] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:21,962] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,014] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,015] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,067] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,068] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,119] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,121] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,171] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,173] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,224] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,225] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,275] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,276] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,327] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,328] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,378] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,379] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,431] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,432] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,483] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,484] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,535] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,536] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,586] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,588] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,638] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,640] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:256] -> [Entrando]
+cadena para ampliar el id_user: LPAD(?,3,'0')
+[2008-03-18 18:14:22,690] [DEBUG] [com.megasoft.sincronizador.CuentaCvpn.sincronizaLosGsms] [CuentaCvpn.java:280] -> [Sale]
+[2008-03-18 18:14:22,691] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarLosGsmsDeLasVpnsExistentes] [SincronizadorKenanCvpn.java:854] -> [Saliendo]
+[2008-03-18 18:14:22,692] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:525] -> [antes agregar las cuentas nuevas en Kenan hacia CVPN]
+[2008-03-18 18:14:22,694] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.agregarLasCuentasNuevasEnCvpn] [SincronizadorKenanCvpn.java:638] -> [Entra]
+cadena para ampliar el id_user en el sincronizadorKenanCvpn: LPAD(?,3,'0')
+[2008-03-18 18:14:22,740] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.agregarLasCuentasNuevasEnCvpn] [SincronizadorKenanCvpn.java:828] -> [Sale]
+[2008-03-18 18:14:22,741] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:528] -> [despues agregar las cuentas nuevas en Kenan hacia CVPN]
+***********************************************
+-----------------------------------------------
+-- Fin del proceso --
+-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2008-03-18 18:14:22,743] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:559] -> [Sale]
+[2008-03-18 18:14:22,744] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.cerrarConexionesBD] [SincronizadorKenanCvpn.java:440] -> [Entra]
+[2008-03-18 18:14:22,753] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.cerrarConexionesBD] [SincronizadorKenanCvpn.java:454] -> [Sale]
+[2008-03-18 18:14:22,755] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:360] -> [Fin del proceso]
+[2008-03-18 18:14:26,094] [INFO ] [ve.com.digitel.ccinvpn.ConciliadorCvpnInvpn.main] [ConciliadorCvpnInvpn.java:173] -> [resource/ccinvpn.properties - bd/selectCuentasVpn.sql - resource/log4j.xml]
+[2008-03-18 18:14:26,112] [INFO ] [ve.com.digitel.ccinvpn.ConciliadorCvpnInvpn.main] [ConciliadorCvpnInvpn.java:183] -> [main...hola]
+[2008-03-18 18:14:26,114] [INFO ] [ve.com.digitel.ccinvpn.ConciliadorCvpnInvpn.<init>] [ConciliadorCvpnInvpn.java:45] -> [... ]
+[2008-03-18 18:14:26,116] [INFO ] [ve.com.digitel.ccinvpn.ConciliadorCvpnInvpn.init] [ConciliadorCvpnInvpn.java:50] -> [Iniciando... ]
+[2008-03-18 18:14:29,116] [DEBUG] [ve.com.digitel.ccinvpn.ConciliadorCvpnInvpn.init] [ConciliadorCvpnInvpn.java:63] -> [jdbc:oracle:thin:@10.27.31.67:1521:PRYDB - cvpn - digitel412 - oracle.jdbc.driver.OracleDriver]
+[2008-03-18 18:14:30,303] [DEBUG] [ve.com.digitel.ccinvpn.ConciliadorCvpnInvpn.init] [ConciliadorCvpnInvpn.java:89] -> [ SELECT CMF.HIERARCHY_ID, P.PARENT_ACCOUNT_NO, P.ELEMENT_ID, P.PARENT_SUBSCR_NO, P.COMPONENT_ID, C.DESCRIPTION_CODE, D.DESCRIPTION_TEXT, E.EXTERNAL_ID GSM, E2.EXTERNAL_ID IMSI, TX_COMPANY COMPANYNAME , ID_VPN, ID_USER NUMBER_NAME, IN_STATUS FROM PRODUCT P, PRODUCT_ELEMENTS C, DESCRIPTIONS D, EXTERNAL_ID_EQUIP_MAP E , CMF, component_definition_ref CDREF, EXTERNAL_ID_EQUIP_MAP E2 , VPN_CORP WHERE P.ELEMENT_ID= C.ELEMENT_ID AND C.DESCRIPTION_CODE= D.DESCRIPTION_CODE AND D.LANGUAGE_CODE=1 AND P.PARENT_SUBSCR_NO= E.SUBSCR_NO AND E.EXTERNAL_ID_TYPE IN (11,40) AND CMF.ACCOUNT_NO = P.PARENT_ACCOUNT_NO AND CMF.DATE_ACTIVE < SYSDATE AND (CMF.DATE_INACTIVE IS NULL OR CMF.DATE_INACTIVE > SYSDATE) AND CDREF.INACTIVE_DT IS NULL AND P.COMPONENT_ID BETWEEN 800 AND 802 AND CDREF.COMPONENT_ID = P.COMPONENT_ID   AND P.PARENT_SUBSCR_NO=E2.SUBSCR_NO AND E2.ACTIVE_DATE < SYSDATE AND (E2.INACTIVE_DATE IS NULL OR E2.INACTIVE_DATE > SYSDATE) AND E2.EXTERNAL_ID_TYPE IN (10) AND VPN_CORP.in_status IN ('I','U','D' ) AND VPN_CORP.NU_CUENTA = CMF.HIERARCHY_ID AND VPN_CORP.NU_MSISDN = E.EXTERNAL_ID     ]
+[2008-03-18 18:14:30,308] [INFO ] [ve.com.digitel.ccinvpn.ConciliadorCvpnInvpn.conciliar] [ConciliadorCvpnInvpn.java:116] -> [conciliando...]
+[2008-03-18 18:14:32,634] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.crearParcialSuscriptorInvpn] [InvpnAdapter.java:218] -> [ ve.com.digitel.ccinvpn.model.CuentaCvpn@1815bfb]
+[2008-03-18 18:14:32,637] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:153] -> [invpn.crear.parcial.suscriptor - {Imsi=734021001028471, GroupId=G12158906, UserId=4125603017, NumberName=2, CompanyId=12158906, Plan=MEDIO, TraceId=0}]
+[2008-03-18 18:14:33,370] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:159] -> [<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>0</fc:TraceId>
+                        <fc:target>invpn.crear.parcial.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>0</TraceId>
+                        <CompanyId>12158906</CompanyId>
+                        <GroupId>G12158906</GroupId>
+                        <Plan>MEDIO</Plan>
+                        <UserId>4125603017</UserId>
+                        <NumberName>2</NumberName>            
+            </fc:body>
+</fc:request>]
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>0</fc:TraceId>
+                        <fc:target>invpn.crear.parcial.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>0</TraceId>
+                        <CompanyId>12158906</CompanyId>
+                        <GroupId>G12158906</GroupId>
+                        <Plan>MEDIO</Plan>
+                        <UserId>4125603017</UserId>
+                        <NumberName>2</NumberName>            
+            </fc:body>
+</fc:request>
+Mensaje enviado a la cola
+[2008-03-18 18:14:39,121] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.crearCuentaInvpn] [InvpnAdapter.java:311] -> [ ve.com.digitel.ccinvpn.model.CuentaCvpn@3c9c31]
+[2008-03-18 18:14:39,125] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:153] -> [invpn.crear.vpn - {GroupName=PRUEBAS Servicio INVPN, GroupId=G12158905, CompanyId=12158905, Plan=BASICO, TraceId=1, CompanyName=PRUEBAS Servicio INVPN}]
+[2008-03-18 18:14:39,162] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:159] -> [<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>1</fc:TraceId>
+                        <fc:target>invpn.crear.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>BASICO</Plan>
+                        <TraceId>1</TraceId>
+                        <GroupId>G12158905</GroupId>
+                        <GroupName>PRUEBAS Servicio INVPN</GroupName>                        
+                        <CompanyId>12158905</CompanyId>
+                        <CompanyName>PRUEBAS Servicio INVPN</CompanyName>
+            </fc:body>
+</fc:request>]
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>1</fc:TraceId>
+                        <fc:target>invpn.crear.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>BASICO</Plan>
+                        <TraceId>1</TraceId>
+                        <GroupId>G12158905</GroupId>
+                        <GroupName>PRUEBAS Servicio INVPN</GroupName>                        
+                        <CompanyId>12158905</CompanyId>
+                        <CompanyName>PRUEBAS Servicio INVPN</CompanyName>
+            </fc:body>
+</fc:request>
+Mensaje enviado a la cola
+[2008-03-18 18:14:39,265] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.crearSuscriptorInvpn] [InvpnAdapter.java:192] -> [ ve.com.digitel.ccinvpn.model.CuentaCvpn@3c9c31]
+[2008-03-18 18:14:39,268] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:153] -> [invpn.crear.suscriptor - {Imsi=734021001028470, GroupId=G12158905, UserId=4125603009, NumberName=002, CompanyId=12158905, Plan=BASICO, TraceId=2}]
+[2008-03-18 18:14:39,299] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:159] -> [<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>2</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>2</TraceId>
+                        <CompanyId>12158905</CompanyId>
+                        <GroupId>G12158905</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021001028470</Imsi>
+                        <UserId>4125603009</UserId>
+                        <NumberName>002</NumberName>
+            </fc:body>
+</fc:request>]
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>2</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>2</TraceId>
+                        <CompanyId>12158905</CompanyId>
+                        <GroupId>G12158905</GroupId>
+                        <Plan>BASICO</Plan>
+                        <Imsi>734021001028470</Imsi>
+                        <UserId>4125603009</UserId>
+                        <NumberName>002</NumberName>
+            </fc:body>
+</fc:request>
+Mensaje enviado a la cola
+[2008-03-18 18:14:40,105] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.crearCuentaInvpn] [InvpnAdapter.java:311] -> [ ve.com.digitel.ccinvpn.model.CuentaCvpn@1a4ded3]
+[2008-03-18 18:14:40,107] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:153] -> [invpn.crear.vpn - {GroupName=Corporación Digitel, C.A, GroupId=G10023350, CompanyId=10023350, Plan=AVANZADO, TraceId=3, CompanyName=Corporación Digitel, C.A}]
+[2008-03-18 18:14:40,136] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:159] -> [<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>3</fc:TraceId>
+                        <fc:target>invpn.crear.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>AVANZADO</Plan>
+                        <TraceId>3</TraceId>
+                        <GroupId>G10023350</GroupId>
+                        <GroupName>Corporación Digitel, C.A</GroupName>                        
+                        <CompanyId>10023350</CompanyId>
+                        <CompanyName>Corporación Digitel, C.A</CompanyName>
+            </fc:body>
+</fc:request>]
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>3</fc:TraceId>
+                        <fc:target>invpn.crear.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>AVANZADO</Plan>
+                        <TraceId>3</TraceId>
+                        <GroupId>G10023350</GroupId>
+                        <GroupName>Corporación Digitel, C.A</GroupName>                        
+                        <CompanyId>10023350</CompanyId>
+                        <CompanyName>Corporación Digitel, C.A</CompanyName>
+            </fc:body>
+</fc:request>
+Mensaje enviado a la cola
+[2008-03-18 18:14:41,454] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.crearSuscriptorInvpn] [InvpnAdapter.java:192] -> [ ve.com.digitel.ccinvpn.model.CuentaCvpn@1a4ded3]
+[2008-03-18 18:14:41,472] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:153] -> [invpn.crear.suscriptor - {Imsi=734021001019478, GroupId=G10023350, UserId=4125604289, NumberName=003, CompanyId=10023350, Plan=AVANZADO, TraceId=4}]
+[2008-03-18 18:14:41,503] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:159] -> [<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>4</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>4</TraceId>
+                        <CompanyId>10023350</CompanyId>
+                        <GroupId>G10023350</GroupId>
+                        <Plan>AVANZADO</Plan>
+                        <Imsi>734021001019478</Imsi>
+                        <UserId>4125604289</UserId>
+                        <NumberName>003</NumberName>
+            </fc:body>
+</fc:request>]
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>4</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>4</TraceId>
+                        <CompanyId>10023350</CompanyId>
+                        <GroupId>G10023350</GroupId>
+                        <Plan>AVANZADO</Plan>
+                        <Imsi>734021001019478</Imsi>
+                        <UserId>4125604289</UserId>
+                        <NumberName>003</NumberName>
+            </fc:body>
+</fc:request>
+Mensaje enviado a la cola
+[2008-03-18 18:14:42,310] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.crearCuentaInvpn] [InvpnAdapter.java:311] -> [ ve.com.digitel.ccinvpn.model.CuentaCvpn@121177e]
+[2008-03-18 18:14:42,312] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:153] -> [invpn.crear.vpn - {GroupName=Corporación Digitel, C.A, GroupId=G10023350, CompanyId=10023350, Plan=AVANZADO, TraceId=5, CompanyName=Corporación Digitel, C.A}]
+[2008-03-18 18:14:42,340] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:159] -> [<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>5</fc:TraceId>
+                        <fc:target>invpn.crear.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>AVANZADO</Plan>
+                        <TraceId>5</TraceId>
+                        <GroupId>G10023350</GroupId>
+                        <GroupName>Corporación Digitel, C.A</GroupName>                        
+                        <CompanyId>10023350</CompanyId>
+                        <CompanyName>Corporación Digitel, C.A</CompanyName>
+            </fc:body>
+</fc:request>]
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>5</fc:TraceId>
+                        <fc:target>invpn.crear.vpn</fc:target>
+            </fc:header>
+            <fc:body>
+                        <Plan>AVANZADO</Plan>
+                        <TraceId>5</TraceId>
+                        <GroupId>G10023350</GroupId>
+                        <GroupName>Corporación Digitel, C.A</GroupName>                        
+                        <CompanyId>10023350</CompanyId>
+                        <CompanyName>Corporación Digitel, C.A</CompanyName>
+            </fc:body>
+</fc:request>
+Mensaje enviado a la cola
+[2008-03-18 18:14:42,528] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.crearSuscriptorInvpn] [InvpnAdapter.java:192] -> [ ve.com.digitel.ccinvpn.model.CuentaCvpn@121177e]
+[2008-03-18 18:14:42,531] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:153] -> [invpn.crear.suscriptor - {Imsi=734021001346070, GroupId=G10023350, UserId=4125604291, NumberName=005, CompanyId=10023350, Plan=AVANZADO, TraceId=6}]
+[2008-03-18 18:14:42,713] [INFO ] [ve.com.digitel.ccinvpn.InvpnAdapter.sendRequestXmlToInvpn] [InvpnAdapter.java:159] -> [<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>6</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>6</TraceId>
+                        <CompanyId>10023350</CompanyId>
+                        <GroupId>G10023350</GroupId>
+                        <Plan>AVANZADO</Plan>
+                        <Imsi>734021001346070</Imsi>
+                        <UserId>4125604291</UserId>
+                        <NumberName>005</NumberName>
+            </fc:body>
+</fc:request>]
+<fc:request xmlns:fc="http://www.digitelcorp.com.ve/integracion/FCFlows" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://www.digitelcorp.com.ve/integracion/Invpn" 
+            xsi:schemaLocation="http://www.digitelcorp.com.ve/integracion/FCFlows FCFlows.xsd http://www.digitelcorp.com.ve/integracion/Invpn InvpnRequest.xsd ">
+            <fc:header>
+                        <fc:TraceId>6</fc:TraceId>
+                        <fc:target>invpn.crear.suscriptor</fc:target>
+            </fc:header>
+            <fc:body>
+                        <TraceId>6</TraceId>
+                        <CompanyId>10023350</CompanyId>
+                        <GroupId>G10023350</GroupId>
+                        <Plan>AVANZADO</Plan>
+                        <Imsi>734021001346070</Imsi>
+                        <UserId>4125604291</UserId>
+                        <NumberName>005</NumberName>
+            </fc:body>
+</fc:request>
+Mensaje enviado a la cola
+dentro del main!!!!!
+dentro del try!!!!
+notaParaIserciónDeVpn: null
+usuarioQueCambiaLasVpns: null
+planParaIserciónDeVpn: null
+entro en el args >1
+entro en el args >2
+dentro del try para crear el archivo log
+[2008-03-18 18:14:46,514] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:306] -> [inicio del proceso!!!!!!!!!!!!!]
+inicio del proceso!!!!!!!!!!!!!
+[2008-03-18 18:14:46,534] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:314] -> [Se va a modificar en la BD]
+Se va a modificar en la BD
+[2008-03-18 18:14:46,536] [INFO ] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:321] -> [Se eligio borrar las vpns y gsms sobrantes en la bd de cvpn]
+[2008-03-18 18:14:46,538] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:412] -> [ENTRANDO]
+[2008-03-18 18:14:46,553] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:416] -> [Consiguio el driver de la BD]
+[2008-03-18 18:14:47,733] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:423] -> [Creo la conexión hacia Kenan]
+[2008-03-18 18:14:47,839] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:431] -> [Creo la conexión hacia CVPN]
+[2008-03-18 18:14:47,841] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.abrirConexionesBD] [SincronizadorKenanCvpn.java:433] -> [SALIENDO]
+[2008-03-18 18:14:48,011] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.sincronizarBDKenanConCvpn] [SincronizadorKenanCvpn.java:485] -> [Entra]
+[2008-03-18 18:14:48,232] [FATAL] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:351] -> [Error al sincronizarORA-04045: errors during recompilation/revalidation of CVPN.ACTUALIZAR_VPN_CORPORATIVA
+ORA-04052: error occurred when looking up remote object MDS.LAC_TO_PREFIX@DBL_MDS4_HIBRIDO.CORP.DIGITEL.COM.VE
+ORA-00604: error occurred at recursive SQL level 2
+ORA-12541: TNS:no listener
+ORA-12547: TNS:lost contact
+]
+[2008-03-18 18:14:49,254] [FATAL] [com.megasoft.sincronizador.SincronizadorKenanCvpn.main] [SincronizadorKenanCvpn.java:352] -> [java.sql.SQLException: ORA-04045: errors during recompilation/revalidation of CVPN.ACTUALIZAR_VPN_CORPORATIVA
+ORA-04052: error occurred when looking up remote object MDS.LAC_TO_PREFIX@DBL_MDS4_HIBRIDO.CORP.DIGITEL.COM.VE
+ORA-00604: error occurred at recursive SQL level 2
+ORA-12541: TNS:no listener
+ORA-12547: TNS:lost contact
+]
+[2008-03-18 18:14:50,273] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.cerrarConexionesBD] [SincronizadorKenanCvpn.java:440] -> [Entra]
+[2008-03-18 18:14:50,281] [DEBUG] [com.megasoft.sincronizador.SincronizadorKenanCvpn.cerrarConexionesBD] [SincronizadorKenanCvpn.java:454] -> [Sale]

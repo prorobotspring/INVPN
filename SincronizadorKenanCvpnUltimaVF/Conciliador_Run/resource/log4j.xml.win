@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+<!-- 
+log4j.logger.com.ve.digitel=ON
+log4j.logger.org.apache.axis=OFF
+ -->
+
+	<appender name="STDOUT"
+		class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"	value="[%d] [%-5p] [%C.%M] [%F:%L] -> [%m]%n" />
+		</layout>
+	</appender>
+	
+	<appender name="PRG_FILE" class="org.apache.log4j.FileAppender">
+		<param name="File" value="logs/int_prog.log" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"	value="%-4r [%t] %-5p %c %x - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="PROD_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="logs/int_prog_perform.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="Threshold" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"	value="[%d{yyyyMMMdd HH:mm:ss,SSS}][%-5p][%M %F:%L][%m]%n" />
+		</layout>
+	</appender>
+
+	<appender name="PROD_SMS" class="ve.com.digitel.bssint.log.SMSAppender">
+		<param name="Threshold" value="info"/>
+		<param name="DestinationsFile" value="resource/sms.cfg"/>
+		<param name="From" value="INVPN2"/>
+		<param name="User" value="sisco"/>
+		<param name="Password" value="sisco919"/>
+		<param name="Server" value="csov01"/>
+		<param name="Port" value="9011"/>
+		<param name="TimeOut" value="1000"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- Definicion del patron de la traza [Fecha][NIVEL][ID][METODO ARCHIVO][MENSAJE] -->
+			<param name="ConversionPattern"	value="%m%n" />
+		</layout>
+	</appender>
+
+
+	<!-- 
+	<appender name="PROD_SMTP" class="org.apache.log4j.net.SMTPAppender">
+		<param name="Threshold" value="fatal"/>
+		<param name="Subject" value="ERROR: INVPN"/>
+		<param name="SMTPHost" value="CBN-MSS-SRV-040.digitelcorp.com.ve"/>
+		<param name="From" value="INVPN@digitel.com.ve"/>
+		<param name="to" value="javier_cabrera@digitel.com.ve"/>
+		<param name="BufferSize" value="512"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"	value="APP %d{yyyyMMMdd HH:mm} [%-5p] %C{1} - %m%n" />
+		</layout>
+	</appender>
+	 -->
+
+	<!-- 
+	 -->
+	<logger name="org.apache.axis">
+	    <level value="warn"/> 
+	</logger>	
+
+	
+	<category name="MYAPP_PERFORMANCE">
+		<priority value="error" />
+		<appender-ref ref="PROD_SMS" />
+	</category>
+	<root>
+    	 <level value="debug"/>
+    	<!-- 
+		<priority value="debug" />
+    	 -->
+
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="PRG_FILE" />
+		<appender-ref ref="PROD_FILE" />
+		<appender-ref ref="PROD_SMS" />	
+		<!-- 
+		<appender-ref ref="PROD_SMTP" />		
+		 -->	
+	</root>
+</log4j:configuration>

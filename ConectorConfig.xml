@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invpn-conector>
+	<conector id="ADM_CAI">
+		<server>10.66.9.61</server>
+		<port>3300</port>
+		<loginCMD>LOGIN:"administratorName=jambala,nodeName=jambala":VPNpokemon2;</loginCMD>
+	</conector>
+	<conector id="HLR">
+		<providerURL>t3://CFGLOBD05:8601</providerURL>
+		<context>weblogic.jndi.WLInitialContextFactory</context>
+	</conector>
+</invpn-conector>
